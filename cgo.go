@@ -10,7 +10,7 @@ package v8go
 // #cgo LDFLAGS: -pthread
 // #cgo darwin,amd64 LDFLAGS: -L${SRCDIR}/deps/darwin_x86_64
 // #cgo darwin,arm64 LDFLAGS: -L${SRCDIR}/deps/darwin_arm64
-// #cgo linux,amd64 LDFLAGS: -L${SRCDIR} -lv8 -ldl
+// #cgo linux,amd64 LDFLAGS: -L${SRCDIR} -Wl,${SRCDIR}/libv8.h -ldl
 // #cgo linux,arm64 LDFLAGS: -L${SRCDIR}/deps/linux_arm64 -ldl
 import "C"
 
