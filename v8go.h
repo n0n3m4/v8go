@@ -6,7 +6,7 @@
 #define V8GO_H
 #ifdef __cplusplus
 
-#include "libplatform/libplatform.h"
+#include "libplatform.h"
 #include "v8-profiler.h"
 #include "v8.h"
 
